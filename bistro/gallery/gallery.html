@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Black Goose Bistro Gallery</title>
+<style>
+body {
+  background-color: #faf2e4;
+  margin: 0 10%;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-bottom: 1px solid #57b1dc;
+  margin-top: 30px;
+}
+
+h2 {
+  color: #d1633c;
+  font-size: 1.2em;
+}
+
+h3 {
+  text-align: center;
+  border-bottom: 1px solid #57b1dc;
+  font-size: 1.2em;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+nav ul li a {
+  background-color: #d1633c;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+nav ul li a:hover {
+  background-color: #a9442f;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.gallery-item {
+  text-align: center;
+  max-width: 300px;
+  margin: auto;
+}
+.gallery-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Black Goose Bistro Gallery</h1>
+<nav>
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../menu.html">Menu</a></li>
+    <li><a href="../bgnews.html">News</a></li>
+    <li><a href="../gallery/gallery.html">Gallery</a></li>
+    <li><a href="../jenskitchen/jenskitchen.html">Jen's Kitchen</a></li>
+  </ul>
+</nav>
+<h3><p>Not only is our food good, it's also good-looking! Our patrons often stop to admire our fare with a quick Instagram before digging in. We've collected a few of our favorite shots here.</p></h3>
+
+<div class="gallery">
+  <div class="gallery-item">
+    <h2>Our Baked Goods</h2>
+    <a href="bread.html"><img src="thumbnails/bread-200.jpg" alt="close-up of sliced rustic bread"></a>
+    <p>We start our day at the crack of dawn to bake our own muffins, bread, and dinner rolls. Loaves not used that day are donated to the local food shelter.</p>
+  </div>
+  
+  <div class="gallery-item">
+    <h2>Our Burgers</h2>
+    <a href="burgers.html"><img src="thumbnails/burgers-200.jpg" alt="close-up of burgers"></a>
+    <p>People come from all over to enjoy our lovingly made burgers. We grind our own locally-sourced organic beef and turkey so you know it's fresh and free from fillers and other nonsense.</p>
+  </div>
+  
+  <div class="gallery-item">
+    <h2>Our Sides</h2>
+    <a href="fries.html"><img src="thumbnails/fries-200.jpg" alt="close-up of fries"></a>
+    <p>A nice American classic of homemade French fries.</p>
+  </div>
+  
+  <div class="gallery-item">
+    <h2>Catch of the Day</h2>
+    <a href="fish.html"><img src="thumbnails/fish-200.jpg" alt="close-up of fish"></a>
+    <p>Our chef works with local fishermen to pick the freshest the sea has to offer for our daily seafood special.</p>
+  </div>
+  
+  <div class="gallery-item">
+    <h2>Our Greens</h2>
+    <a href="Tabouleh.html"><img src="thumbnails/tabouleh-200.jpg" alt="close-up of salads"></a>
+    <p>Try our Tabouleh made with fresh ingredients.</p>
+  </div>
+</div>
+
+</body>
+</html>
