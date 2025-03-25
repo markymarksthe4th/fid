@@ -44,9 +44,10 @@
 
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 20px;
             margin-top: 20px;
+            justify-items: center;
         }
 
         .gallery-item {
@@ -54,11 +55,18 @@
             overflow: hidden;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: #fff;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .gallery-item img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover;
             border-radius: 8px;
             transition: transform 0.3s ease-in-out;
         }
@@ -69,14 +77,15 @@
 
         .gallery-item .description {
             position: absolute;
-            bottom: 10px;
-            left: 10px;
-            right: 10px;
+            bottom: 5px;
+            left: 5px;
+            right: 5px;
             background-color: rgba(0, 0, 0, 0.5);
             color: #fff;
             padding: 5px;
-            font-size: 1em;
+            font-size: 0.9em;
             border-radius: 5px;
+            text-align: center;
         }
     </style>
 </head>
@@ -97,28 +106,44 @@
             <h2>Gallery</h2>
             <div class="gallery">
                 <div class="gallery-item">
-                    <img src="photosjopex_1.jpg" alt="Gallery Image 1">
+                    <a href="castle.html">
+                        <img src="images/photosjopex_1_thumbnail.png" alt="Floating Castle">
+                    </a>
                     <div class="description">Photoshop Image 1</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="logoexample2.png" alt="Gallery Image 2">
+                    <a href="wolf.html">
+                        <img src="images/logoexample2_thumbnail.png" alt="Wolf Logo">
+                    </a>
                     <div class="description">Illustrator Image 1</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="dentist_logo.png" alt="Gallery Image 3">
+                    <a href="dentist.html">
+                        <img src="images/dentist_logo_thumbnail.png" alt="Dentist Logo">
+                    </a>
                     <div class="description">Illustrator Image 2</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="logoexample.png" alt="Gallery Image 4">
+                    <a href="logoexample.html">
+                        <img src="images/logoexample_thumbnail.png" alt="Illustrator Image 3">
+                    </a>
                     <div class="description">Illustrator Image 3</div>
                 </div>
-                <div class="gallery-item before-after">
-                    <div class="before-after-wrapper">
-                        <img src="Remove_Object.jpg" alt="Before Image" class="before-image">
-                        <div class="description">Before & After Photoshop edit</div>
-                        <img src="Afterobject.jpg" alt="After Image" class="after-image">
+                <div class="gallery-item">
+                    <a href="Afterobject.html">
+                        <img src="images/Afterobject_thumbnail.png" alt="After Photoshop Edit">
+                    </a>
+                    <div class="description">After Photoshop Edit</div>
+                </div>
+                <div class="gallery-item">
+                    <a href="beforeobject.html">
+                        <img src="images/Remove_Object_thumbnail.png" alt="Before Photoshop Edit">
+                    </a>
+                    <div class="description">Before Photoshop Edit</div>
+                </div>
             </div>
         </section>
     </div>
 </body>
 </html>
+
