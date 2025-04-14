@@ -1,149 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matthew Carroll - Resume</title>
-    <style>
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f9;
-            color: #333;
-            padding: 20px;
-            margin: 0;
-        }
-
-        .container {
-            max-width: 800px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin: 20px auto;
-        }
-
-        h1, h2, h3 {
-            color: #444;
-            font-weight: 600;
-        }
-
-        h1 {
-            border-bottom: 2px solid #e0e0e0;
-            padding-bottom: 10px;
-        }
-
-        a {
-            color: #0073e6;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 5px;
-            margin: 10px 0;
-        }
-
-        .placeholder {
-            font-style: italic;
-            color: #777;
-        }
-
-        .divider {
-            height: 1px;
-            background: #dcdcdc;
-            margin: 40px 0;
-            border: none;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            color: #888;
-            font-size: 0.9em;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Matthew Carroll - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
+  <link rel="stylesheet" href="resumestyles.css">
+  <meta name="description" content="Online resume for Matthew W. Carroll, web designer and developer.">
+  <meta name="author" content="Matthew W. Carroll">
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <h1>Matthew W. Carroll</h1>
-            <strong>Apopka FL 32712  •	954-707-2958   •  matthewcarroll678@gmail.com</strong>
-            <hr class="divider">
-            <p>Welcome to the professional online web presence for Matthew W. Carroll! Matthew is a resident of Apopka, FL, and a rising web designer and developer with a novices' background in HTML and CSS. His expertise in responsive web design means that his work will look incredible on any screen. Matthew also has an active Github account that he uses to learn and update on his web projects. His familiarity with collaborative programs such as Trello and Google Drive allow for clean and concise work with team members. View his work samples of his work on Adobe illustrator and Adobe Photoshop.</p>
-        </header>
-    </div>
 
-    <hr class="divider">
+  <button class="theme-toggle" onclick="toggleTheme()">Dark Mode</button>
 
-    <div class="container">
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>Responsive Web Design</li>
-                <li>Data Management</li>
-                <li>Project Management</li>
-                <li>Time Management</li>
-                <li>Logistics</li>
-                <li>Teamwork</li>
-                <li>Critical Thinking</li>
-                <li>Stress Management</li>
-                <li>Flexibility</li>
-                <li>Computer Skills</li>
-            </ul>
-        </section>
-    </div>
+  <div class="container" data-aos="fade-up">
+    <header>
+      <h1 data-aos="fade-down">Matthew W. Carroll</h1>
+      <div class="contact-info">
+        Apopka FL 32712 • <a href="tel:9547072958">954-707-2958</a> • <a href="mailto:matthewcarroll678@gmail.com">matthewcarroll678@gmail.com</a>
 
-    <hr class="divider">
+      </div>
 
-    <div class="container">
-        <section>
-            <h2>Software/Hardware</h2>
-            <ul>
-                <li>HTML & CSS</li>
-                <li>C++</li>
-                <li>Visual Studio Code</li>
-                <li>Adobe Photoshop</li>
-                <li>MS Office Suite</li>
-                <li>Unreal Engine</li>
-                <li>Google Drive</li>
-                <li>Trello</li>
-                <li>Dropbox</li>
-                <li>Github</li>
-            </ul>
-        </section>
-    </div>
+        <a class="download-btn" href="Matthew_Carroll_Resume.pdf" download>📄 Download Resume (PDF)</a>
 
-    <hr class="divider">
+      <hr class="divider">
+      <p data-aos="fade-up">
+        Welcome to the professional online web presence for Matthew W. Carroll! Matthew is a resident of Apopka, FL, and a rising web designer and developer with a novices' background in HTML and CSS. His expertise in responsive web design means that his work will look incredible on any screen. Matthew also has an active Github account that he uses to learn and update on his web projects. His familiarity with collaborative programs such as Trello and Google Drive allow for clean and concise work with team members. View his work samples of his work on Adobe illustrator and Adobe Photoshop.
+      </p>
+    </header>
+  </div>
 
-    <div class="container">
-        <section>
-            <h2>Social Media/Web</h2>
-            <ul>
-                <li><a href="https://github.com/markymarksthe4th" target="_blank">GitHub</a></li>
-            </ul>
-        </section>
-    </div>
+  <hr class="divider">
 
-    <hr class="divider">
+  <div class="container" data-aos="fade-right">
+    <section>
+      <h2 class="section-header">Skills</h2>
+      <ul>
+        <li>Responsive Web Design</li>
+        <li>Data Management</li>
+        <li>Project Management</li>
+        <li>Time Management</li>
+        <li>Logistics</li>
+        <li>Teamwork</li>
+        <li>Critical Thinking</li>
+        <li>Stress Management</li>
+        <li>Flexibility</li>
+        <li>Computer Skills</li>
+      </ul>
+    </section>
+  </div>
 
-    <div class="container">
-        <section>
-            <h2><a href="resume_gallery.html" target="_blank">Work Samples</a></h2>
-        </section>
-    </div>
+  <hr class="divider">
+
+  <div class="container" data-aos="fade-left">
+    <section>
+      <h2 class="section-header">Software / Hardware</h2>
+      <ul>
+        <li>HTML & CSS</li>
+        <li>C++</li>
+        <li>Visual Studio Code</li>
+        <li>Adobe Photoshop</li>
+        <li>MS Office Suite</li>
+        <li>Unreal Engine</li>
+        <li>Google Drive</li>
+        <li>Trello</li>
+        <li>Dropbox</li>
+        <li>GitHub</li>
+      </ul>
+    </section>
+  </div>
+
+  <hr class="divider">
+
+  <div class="container" data-aos="zoom-in">
+    <section>
+      <h2 class="section-header">Social Media / Web</h2>
+      <ul>
+        <li><a href="https://github.com/markymarksthe4th" target="_blank">GitHub Profile</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="cta-container" data-aos="zoom-in-up">
+    <a class="cta-link" href="resume_gallery.html" target="_blank">View Work Samples</a>
+  </div>
+
+  <button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  
+  <script>
+    AOS.init({ duration: 800 });
+
+    window.onscroll = function () {
+      const btn = document.getElementById("backToTop");
+      btn.style.display = window.scrollY > 400 ? "block" : "none";
+    };
+
+    function toggleTheme() {
+      document.body.classList.toggle("dark-mode");
+      const toggle = document.querySelector(".theme-toggle");
+      toggle.textContent = document.body.classList.contains("dark-mode") ? "Light Mode" : "Dark Mode";
+    }
+  </script>
 </body>
 </html>
