@@ -2,103 +2,26 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Blacks Goose Bistro: Pizza-on-Demand</title>
-<style>
-body {
-  background-color: #faf2e4;
-  margin: 0 10%;
-  font-family: sans-serif;
-}
-h1 {
-  text-align: center;
-  font-family: serif;
-  font-weight: normal;
-  text-transform: uppercase;
-  border-bottom: 1px solid #57b1dc;
-  margin-top: 30px;
-}
-h2 {
-  color: #d1633c;
-  font-size: 1em;
-}
-nav {
-  text-align: center;
-  margin-bottom: 20px;
-}
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-nav ul li {
-  display: inline;
-  margin: 0 10px;
-}
-nav ul li a {
-  background-color: #d1633c;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-}
-nav ul li a:hover {
-  background-color: #a9442f;
-}
-form {
-  background: #9aa3a7;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-}
-label {
-  font-weight: bold;
-  display: block;
-  margin-top: 10px;
-}
-input, textarea, select {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #57b1dc;
-  border-radius: 4px;
-}
-button {
-  background-color: #d1633c;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-button:hover {
-  background-color: #a9442f;
-}
-.fieldset-options {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.option-group {
-  flex: 1;
-  min-width: 200px;
-}
-</style>
+<title>Black Goose Bistro: Pizza-on-Demand</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="pizzastyles.css">
 </head>
 <body>
+
 <h1><img src="images/blackgoose.png" alt="logo"><br>Black Goose Bistro | Pizza-on-Demand</h1>
+
 <nav>
   <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="menu.html">Menu</a></li>
-      <li><a href="bgnews.html">News</a></li>
-      <li><a href="gallery/gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="jenskitchen/jenskitchen.html">Jen's Kitchen</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="bgnews.html">News</a></li>
+    <li><a href="gallery/gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="jenskitchen/jenskitchen.html">Jen's Kitchen</a></li>
   </ul>
 </nav>
+
 <p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
+
 <form action="http://www.blackgoosebistro.com/pizza.php" method="POST">
   <fieldset>
     <legend>Your Information</legend>
@@ -113,6 +36,7 @@ button:hover {
     <label for="form-delivery">Delivery Instructions:</label>
     <textarea name="customerinstructions" rows="4" maxlength="400" placeholder="No more than 400 characters long" id="form-delivery"></textarea>
   </fieldset>
+
   <h2>Design Your Dream Pizza:</h2>
   <fieldset>
     <legend>Pizza Specifications</legend>
@@ -124,6 +48,7 @@ button:hover {
         <input type="radio" name="crust" value="cheese"> Cheese-Stuffed Crust<br>
         <input type="radio" name="crust" value="gluten-free"> Gluten-Free
       </fieldset>
+
       <fieldset class="option-group">
         <legend>Toppings (Choose as many as you want):</legend>
         <input type="checkbox" name="toppings" value="red" checked> Red Sauce<br>
@@ -135,6 +60,7 @@ button:hover {
         <input type="checkbox" name="toppings" value="anchovies"> Anchovies
       </fieldset>
     </div>
+
     <fieldset>
       <legend>Number of Pizzas:</legend>
       <select name="number">
@@ -147,11 +73,17 @@ button:hover {
       </select>
     </fieldset>
   </fieldset>
+
   <button type="submit">Bring me a pizza!</button>
   <button type="reset">Reset Order!</button>
 </form>
+
 <h2>Location and Hours</h2>
 <p>Seekonk, Massachusetts;<br>Monday through Thursday 11am to 9pm;<br>Friday and Saturday, 11am to midnight</p>
+
+<footer>
+  <p><small>© 2025 Black Goose Bistro. All rights reserved.</small></p>
+</footer>
+
 </body>
 </html>
-

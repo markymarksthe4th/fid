@@ -1,89 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>The Black Goose Bistro News</title>
-<style>
-body {
-  background-color: #faf2e4;
-  margin: 0 10%;
-  font-family: sans-serif;
-}
-h1 {
-  text-align: center;
-  font-family: serif;
-  font-weight: normal;
-  text-transform: uppercase;
-  border-bottom: 1px solid #57b1dc;
-  margin-top: 30px;
-}
-h2 {
-  color: #d1633c;
-  font-size: 1em;
-}
-nav {
-  text-align: center;
-  margin-bottom: 20px;
-}
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-nav ul li {
-  display: inline;
-  margin: 0 10px;
-}
-nav ul li a {
-  background-color: #d1633c;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-}
-nav ul li a:hover {
-  background-color: #a9442f;
-}
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Black Goose Bistro News</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bgnewsstyles.css">
 </head>
 <body>
 
 <header>
-<h1>The Black Goose Bistro News</h1></header>
+  <img src="blackgoose-logo.svg" alt="Black Goose Logo" class="logo">
+  <h1>The Black Goose Bistro</h1>
+</header>
+
 <nav>
-<ul>
+  <ul>
     <li><a href="index.html">Home</a></li>
-    <li><a href="menu.html">Menu</a></li>
-    <li><a style="color: rgb(115, 206, 218)"href="cooking.html">Check out Cooking with Daniel!</a></li>
+    <li><a class="special" href="cooking.html">Cooking with Daniel</a></li>
+    <li><a href="gallery/gallery.html">Gallery</a></li>
     <li><a href="contact.html">Contact</a></li>
     <li><a href="jenskitchen/jenskitchen.html">Jen's Kitchen</a></li>
   </ul>
-  </nav>
+</nav>
 
-</header><article> <header>
-<h2>Summer Menu Items</h2> <p><time datetime="2016-06-18">posted by BGB, June 18, 2017</time></p>
-</header><p>Our chef has been busy putting together the perfect menu for the summer months. Stop by to try these appetizers and main courses while the days are still long.</p> 
-<section id="appetizers">
+<main>
+  <article>
+    <h2>Summer Menu Items <br><time datetime="2017-06-18">Posted June 18, 2017</time></h2>
+    <p>Our chef has created the perfect menu for summer. Come by and try these seasonal favorites while the days are still long and warm.</p>
+
     <h3>Appetizers</h3>
-    <dt>Black bean purses</dt> <dd>Spicy black bean and a blend of Mexican cheeses wrapped in sheets of phyllo and baked until golden. <span class="price">$3.95</span></dd>
-    <dt>Southwestern napoleons with lump crab <b>&ndash; new item!</b></dt> <dd>Layers of light lump crab meat, bean and corn salsa, and our handmade flour tortillas. <span class="price">$7.95</span></dd>
-    </dl> </section>
+    <section class="menu-section">
+      <div class="menu-card">
+        <img src="https://www.emilieeats.com/wp-content/uploads/2022/03/30-vegan-black-bean-recipes-easy-dinner-ideas-30.jpg" alt="Black Bean Purses">
+        <div class="card-content">
+          <h4>Black Bean Purses <span class="price">$3.95</span></h4>
+          <p>Spicy black beans and Mexican cheeses wrapped in phyllo and baked golden.</p>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img src="https://marylandcrabs.com/wp-content/uploads/2021/09/HH-606-scaled.jpg" alt="Southwestern Napoleons">
+        <div class="card-content">
+          <h4>Southwestern Napoleons <span class="price">$7.95</span></h4>
+          <p>Layers of crab meat, corn salsa, and handmade tortillas. <strong>New!</strong></p>
+        </div>
+      </div>
+    </section>
 
-    <section id="maincourses">
-    <h3>Main Courses</h3> <dl>
-    <dt>Shrimp sate kebabs with peanut sauce</dt> <dd>Skewers of shrimp marinated in lemongrass, garlic, and fish sauce then grilled to perfection. Served with spicy peanut sauce and jasmine rice. <span class="price">$12.95</span></dd>
-    <dt>Jerk rotisserie chicken with fried plantains <b>&ndash; new item!</b></dt> <dd>ender chicken slow-roasted on the rotisserie, flavored with spicy and fragrant jerk sauce and served with fried plantains and fresh mango. <span class="price">$12.95</span></dd>
-    </dl> </section>
+    <h3>Main Courses</h3>
+    <section class="menu-section">
+      <div class="menu-card">
+        <img src="https://piquantpost.com/cdn/shop/articles/rAwgb4GYE-9fFCGBKiN7x_1000x.jpg?v=1711817723" alt="Shrimp Sate Kebabs">
+        <div class="card-content">
+          <h4>Shrimp Sate Kebabs <span class="price">$12.95</span></h4>
+          <p>Grilled shrimp in lemongrass, garlic, and fish sauce, with jasmine rice and peanut sauce.</p>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img src="https://i.ytimg.com/vi/49FBpg3B2O8/sddefault.jpg" alt="Jerk Chicken">
+        <div class="card-content">
+          <h4>Jerk Rotisserie Chicken <span class="price">$12.95</span></h4>
+          <p>Jerk-roasted chicken with fried plantains and fresh mango. <strong>New!</strong></p>
+        </div>
+      </div>
+    </section>
+  </article>
 
-    <article><header>
-    <h2>Low and Slow</h2> <p>posted by BGB, <time datetime="2016-11-15">November 15, 2016</time></p>
-    <header><p>This week I am <em>extremely</em> excited about a new cooking technique called <dfn><i>sous vide</i></dfn>. In <i>sous vide</i> cooking, you submerge the food (usually vacuum-sealed in plastic) into a water bath that is precisely set to the target temperature you want the food to be cooked to. In his book, <cite>Cooking for Geeks</cite>, Jeff Potter describes it as <q>ultra-low-temperature poaching.</q></p></header>
-    <p>Next month, we will be serving <b><i>Sous Vide</i> Salmon with Dill Hollandaise</b>. To reserve a seat at the chef table, contact us before <time datetime="2016-11-30">November 30</time>.</p>
+  <article>
+    <h2>Low and Slow <br><time datetime="2016-11-15">Posted November 15, 2016</time></h2>
+    <p>This week we're diving into sous vide cooking—where food is sealed and cooked in a precisely heated water bath. Jeff Potter calls it <q>ultra-low-temperature poaching</q>.</p>
+    <p>Next month, try our <strong>Sous Vide Salmon with Dill Hollandaise</strong>! Reserve your seat by <time datetime="2016-11-30">November 30</time>.</p>
+  </article>
+</main>
 
-    <footer><div><p>Location:<br>Baker's Corner, Seekonk, MA</p> 
-    <p>Hours:<br>Tuesday to Saturday, <time datetime="11:00">11 am</time> to <time datetime="23:00">11pm</time></header></p>
-    </div> <p><small>All content copyright &copy; 2017, Black Goose Bistro and Jennifer Robbins</small></p>
-    </footer>
-</body></html>
+<footer>
+  <p><strong>Location:</strong> Baker's Corner, Seekonk, MA</p>
+  <p><strong>Hours:</strong> Tuesday to Saturday, 11 am – 11 pm</p>
+  <p>&copy; 2017 Black Goose Bistro and Jennifer Robbins</p>
+</footer>
+
+</body>
+</html>
